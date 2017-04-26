@@ -1,6 +1,11 @@
 # chatRoom
 网站在线客服（基于socket.io和node）
 
+<br/>
+
+
+参考链接：<a href="http://www.guangzhouyueyang.com">http://www.guangzhouyueyang.com </a><br/>
+
 很多网站都会用到在线客服这个功能，该插件基于node和socket.io制作，使用他您可以完成多对一即时聊天，即客服一个端(chatServer.html)，多个用户可以和唯一客户端聊天,当然如果你登录两个客服端，他们都能同时收到客户发来的信息，程序运行需要node，并且安装index.js需要的对应模块(express, socket.io)，不会的就自行度娘啦<br/><br/>
 
 程序工作原理： <br/>
