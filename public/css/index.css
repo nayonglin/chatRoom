@@ -1,0 +1,157 @@
+
+html {
+  font-size: 11px;
+}
+
+#chat_logo {   /*在线客服指示框*/
+    position: fixed;
+    right: 0;
+    bottom: 180px;
+    width: 35px;
+    height: 100px;
+    font-size: 1.6rem;
+    text-align: right;
+    background:url(../images/go_left.svg) -3px 40px no-repeat #d7e0e6;
+    border-radius: 3px;
+    cursor: default;
+    padding-right: 4px;
+}
+
+#chat {   /*在线客服*/
+    position: fixed;
+    right: -365px;
+    bottom: 20px;
+    width: 360px;
+    height: 410px;
+    font-size: 1.5rem;
+    text-align: right;
+    background-color: #d7e0e6;
+    border-radius: 4px;
+    cursor: default;
+    z-index: 100;
+}
+
+#chat_top {   /*聊天框顶部*/
+    height: 40px;
+    width: 360px;
+    background-color: #1CD5B5;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+
+#chat_message {   /*聊天框消息框*/
+    height: 250px;
+    width: 360px;
+    overflow-y: scroll;
+}
+
+#chat_tools {   /*聊天框工具栏*/
+    height: 30px;
+    width: 360px;
+    background-color: #1CD5B5;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+#chat_input {    /*聊天框输入框*/
+    height: 90px;
+    width: 360px;
+    text-align: left;
+}
+
+#send {          /*聊天框发送按钮*/
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #1CD5B5;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    color: white;
+}
+
+#service {      /*在线客服logo*/
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}
+
+#pic_choose, #face_choose {   /*选择图片按钮*/
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    margin: 0 5px;
+}
+
+.message_service {   /*客服聊天框*/
+    padding: 10px 0 10px 10px;
+    text-align: left;
+    display: block;
+    clear: both;
+}
+
+.message_custom {   /*顾客聊天框*/
+    padding: 10px 0 10px 10px;
+    float: right;
+    display: none;
+}
+
+.service_left {    /*客服信息框左部*/
+    width: 50px;
+    float: left;
+}
+
+.service_right {   /*客服信息框右部*/
+    float: left;
+    max-width: 160px;
+}
+
+.custom_left {    /*顾客信息框左部*/
+    max-width: 160px;
+    float: right;
+}
+
+.custom_right {   /*客服信息框右部*/
+    float: right;
+    width: 50px;
+}
+
+.service_message_contain {    /*客服信息内容部分*/
+    max-width: 160px;
+    background:url(../images/chat_service.png);
+    -moz-background-size:100% 100%; /* 老版本的 Firefox */
+    background-size:100% 100%; /* 也可以用PX表示 */
+    background-repeat:no-repeat;
+    padding: 5px 3px 5px 10px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.custom_message_contain {    /*顾客信息内容部分*/
+    max-width: 160px;
+    min-width: 5px;
+    background:url(../images/chat_custom.png);
+    -moz-background-size:100% 100%; /* 老版本的 Firefox */
+    background-size:100% 100%; /* 也可以用PX表示 */
+    background-repeat:no-repeat;
+    padding: 5px 10px 5px 5px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.message_time {    /*客服聊天框时间*/
+     height: 15px;
+     width: 160px;
+     text-align: center;
+     font-size: 1rem;
+}
+.service_head {    /*客服聊天框头像*/
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 10px;
+}
+
+

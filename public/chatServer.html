@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>客服端</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/chatServer.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="choose">
+    <select id="choose_chat">
+     <option value="chat_message">默认</option>
+    </select>
+</div>
+<!--在线客服-->
+<div id="chat">
+    <div id="chat_top"><img src="images/service.svg" id="service">在线客服</div>
+    <div id="chat_message" class="chat_message">
+
+        <div class="message_service" id="message0">
+            <div class="service_left">
+                <img src="images/custom_head.jpg" class="service_head">
+            </div>
+            <div class="service_right">
+                <div class="message_time"></div>
+                <div class="service_message_contain">sss</div>
+            </div>
+        </div>
+        <div style='clear:both'></div>
+
+        <div class="message_custom" id="message1">
+            <div class="custom_right">
+                <img src="images/service_head.jpeg" class="service_head">
+            </div>
+
+            <div class="custom_left">
+                <div class="message_time"></div>
+                <div class="custom_message_contain"></div>
+            </div>
+        </div>
+        <div style='clear:both'></div>
+
+    </div>
+    <div id="chat_tools">
+        <img src="images/face_choose.svg" id="face_choose">
+        <img src="images/pic_choose.svg" id="pic_choose">
+    </div>
+    <textarea id="chat_input"></textarea>
+    <input type="button" value="发送" id="send">
+
+</div>
+<!--在线客服结束-->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="//cdn.bootcss.com/socket.io/1.7.3/socket.io.js"></script>
+<script src="js/chatServer.js"></script>
+</body>
+</html>

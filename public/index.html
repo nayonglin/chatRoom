@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <title>聊天室</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<!--在线客服-->
+<div id="chat_logo">
+    在线客服
+</div>
+<div id="chat">
+    <div id="chat_top"><img src="images/service.svg" id="service"><span id="isOnline">在线客服为您服务（在线）</span></div>
+    <div id="chat_message">
+
+        <div class="message_service" id="message0">
+            <div class="service_left">
+                <img src="images/service_head.jpeg" class="service_head">
+            </div>
+            <div class="service_right">
+                <div class="message_time"></div>
+                <div class="service_message_contain">您好，非常高兴为您服务！请问有什么需要咨询的吗？</div>
+            </div>
+        </div>
+        <div style='clear:both'></div>
+
+        <div class="message_custom" id="message1">
+            <div class="custom_right">
+                <img src="images/custom_head.jpg" class="service_head">
+            </div>
+
+            <div class="custom_left">
+                <div class="message_time"></div>
+                <div class="custom_message_contain"></div>
+            </div>
+        </div>
+        <div style='clear:both'></div>
+
+    </div>
+    <div id="chat_tools">
+        <!--<img src="images/face_choose.svg" id="face_choose">-->
+        <!--<img src="images/pic_choose.svg" id="pic_choose">-->
+    </div>
+    <textarea id="chat_input"></textarea>
+    <input type="button" value="发送" id="send">
+
+</div>
+<!--在线客服结束-->
+<script src="js/index.js"></script>
+<script src="//cdn.bootcss.com/socket.io/1.7.3/socket.io.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>
